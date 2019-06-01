@@ -1,0 +1,350 @@
+@import url('color_var.css');
+@import url('text_var.css');
+
+body{
+    margin: 0;
+    padding: 0;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+.content_spacel{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 10px;
+    max-width: 1088px;
+    margin: 0 auto;
+}
+.content{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(75px,auto);
+    grid-gap: 10px;
+    max-width: 1088px;
+    margin: 0 auto;
+
+}
+ul{
+    list-style-type: none;
+    grid-column: 8/13;
+}
+li{
+    display: inline-block;
+    align-content: left;
+    margin-right: 20px;
+    margin-top: 30px;
+    color: var(--c-light_orange);
+    font-style: inherit;
+}
+li:hover{
+    color: var(--c-white_blue);
+}
+#content_contact{
+    width: 100%;
+    height: 20px;
+    background-color: var(--c-white_blue);
+}
+#content_p{
+    grid-column: 6/9;
+    width: auto;
+    font-size: 6px;
+}
+#content_p2{
+    grid-column: 9/10;
+    font-size: 6px;
+}
+#icons_contact{
+    height: 15px;
+    grid-column: 10/13;
+}
+.icons_contact{
+    max-height: 10px;
+    max-width: 10px;
+    min-height: 5px;
+    min-width: 5px;
+    margin: 5px 10px;
+    float: left;
+}
+
+#menubalk{
+    width: 100%;
+    height: 75px;
+    background-color: var(--c-dark-blue);
+}
+#main_foto{
+    width: 100%;
+    max-height: 525px;
+    min-height: auto;
+    background-image: url(./images/joseph-gonzalez-1390566-unsplash.jpg);
+}
+.img_scale{
+    max-width:100%;
+    height:auto;
+    object-fit: cover;
+
+}
+#welcome{
+    width: 275px;
+    height: 350px;
+    background-color: var(--c-dark-blue);
+    opacity: 0.5%;
+    border-radius: 37px;
+    grid-column: 7/12;
+    grid-row: 2/4;
+    padding: 25px;
+}
+#h2welcome{
+    font-size: 32px;
+    color: var(--c-white_blue);
+    text-align: center;
+    margin-top: 150px;
+}
+#pwelcome{
+    font-size: 24px;
+    color: var(--c-white_blue);
+    text-align: center;
+}
+#map{
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    grid-row: 4/6;
+    grid-column: 2/4 ;
+    border: 1px solid brown;
+}
+.icons_contact .map{
+    object-fit: fill;
+    width: 200%;
+}
+#contact{
+    grid-column: 5/8;
+    width: 300px;
+    height: auto;
+}
+#h1contact{
+    font-size: 34px;
+}
+#h2contact{
+    font-size: 24px;
+}
+#h3contact{
+    font-size: 34px;
+    text-align: right;
+    color: var(--c-dark-blue);
+}
+#white{
+    width: 100%;
+    height: 225px;
+    background-color: white;
+}
+
+
+#main_body{
+    width: 100%;
+    height: 825px;
+    background-image: linear-gradient(to right, var(--c-licht_gray), var(--c-white_blue));
+}
+.nav_box{
+    height: 75px;
+    width: 250px;
+    background-image: linear-gradient( var( --c-white_blue), var(--c-licht_gray));
+    grid-column: 2/5;
+}
+.nav_icon{
+    height: 25px;
+    margin: 25px;
+    float: left;
+}
+.nav_name{
+    float: left;
+    font-size: 16px;
+    color: var(--c-dark-blue);
+    margin-top: 40spx;
+}
+.nav_box:hover{
+    background-image: linear-gradient( var( --c-white_blue), var(--c-dark-blue));
+}
+.nav_box_selected{
+    height: 75px;
+    width: 250px;
+    background-image: linear-gradient( var( --c-white_blue), var(--c-dark-blue));
+    grid-column: 2/5;
+}
+.nav_icon_selected{
+    height: 25px;
+    margin: 25px;
+    float: left;
+    color: var(--c-dark-blue);
+}
+.nav_name_selected{
+    float: left;
+    font-size: 16px;
+    color: var(--c-white_blue);
+    margin-top: 40spx;
+}
+.menu{
+    margin-top: 10px;
+    width: 150px;
+    height: 150px;
+    grid-column: 4/6;
+}
+.menu2{
+    margin-top: 10px;
+    width: 150px;
+    height: 375px;
+    grid-column: 6/8;
+}
+.menu3{
+    margin-top: 10px;
+    width: 150px;
+    height: 375px;
+    grid-column: 8/10;
+}
+.menu4{
+    margin-top: 10px;
+    width: 150px;
+    height: 375px;
+    grid-column: 10/12;
+}
+.foto_menu{
+    width: 150px;
+    height: 150px;
+}
+.img_menu{
+    width: 100%;
+    height: 150px;
+}
+.text menu{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}   
+.name_menu{
+    font-size: 22px;
+    color: var(--c-dark-blue);
+    text-align: center;
+}
+.ingredienten{
+    font-size: 12px;
+    text-align: center;
+}
+.button_menu{
+    background-image: linear-gradient( var( --c-light_blue), var(--c-dark-blue));
+    color: var(--c-light_blue);
+    text-align: center;
+    font-size: 12px;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+
+
+#section_body{
+    width: 100%;
+    height: 375px;
+    background-color: var(--c-dark-blue);
+}
+#chef{
+    width: 300px;
+    height: 300px;
+    margin-top: 30px;
+}
+#chefstext{
+    width: 500px;
+    margin-left: 25px;
+    grid-column: 3/12;
+}
+#h2chef{
+    font-size: 52px;
+    color: var(--c-white_blue);
+}
+.pchef{
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: var(--c-white_blue);
+}
+
+
+
+
+
+#galery{
+    width: 100%;
+    height: 825px;
+    background-color: white;
+}
+.galery_big1{
+    margin-top: 25px;
+    width: 500px;
+    height: 250px;
+    grid-column: 1/6;
+}
+.galery_big2{
+    margin-top: 25px;
+    width: 500px;
+    height: 250px;
+    grid-column: 7/13 ;
+}
+.galery3{
+    margin-top: 25px;
+    width: 500px;
+    height: 500px;
+    grid-column: 1/6;
+}
+.galery4{
+    margin-top: 25px;
+    width: 500px;
+    height: 500px;
+    grid-column: 7/13 ;
+}
+
+
+#footer_body{
+    width: 100%;
+    height: 750px;
+    background-color: var(--c-dark-blue);
+}
+.foorterinf1{
+    font-size: 32px;
+    color: var(--c-white_blue);
+    grid-column: 1/4;
+}
+.foorterinf{
+    font-size: 29px;
+    color: var(--c-white_blue);
+    grid-column: 1/4;
+}
+#email{
+    background-color: white;
+    width: 350px;
+    height: 50px;
+    margin: 5px;
+    grid-column: 1/4;
+}
+#onderwerp{
+    background-color: white;
+    width: 350px;
+    height: 50px;
+    margin: 5px;
+    grid-column: 1/4;
+}
+#mail{
+    background-color: white;
+    width: 500px;
+    height: 350px;
+    margin: 5px;
+    grid-column: 1/6;
+}
+#buttonemail{
+    width: 150px;
+    height: 30px;
+    margin: 5px;
+    background-image: linear-gradient(var(--c-white_blue),var(--c-light_orange));
+    grid-column: 1/2;
+}
+#footer_map{
+    width: 400px;
+    height: 650px;
+    margin: 5px;
+    grid-column: 6/13;
+}
